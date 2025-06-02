@@ -7,13 +7,7 @@
 </head>
   
 <body style="background-color:rgb(33, 33, 33);text-align:center;">
-
-    Keep your computer up all night:
-    <input type="button" onclick="sleep.prevent()" value="sleep.prevent()"><br>
-    <br>
-    Go back to sleep:
-    <input type="button" onclick="sleep.allow()" value="sleep.allow()"><br>
-
+  
     <table style="width:100%;height:450px">
       <tr>
         <td style="width:20%">
@@ -22,6 +16,10 @@
         <td>
           <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&showPrint=0&showTz=0&showTitle=0&src=YnJvc3NlYXUubWljaGFlbEBnbWFpbC5jb20&color=%234285f4" style="border:solid 1px #777" frameborder="0" scrolling="no"  width="100%" height="100%"></iframe>
         </td>
+      </tr>
+      <tr>
+        <input type="button" onclick="sleep.prevent()" value="Awake">
+        <input type="button" onclick="sleep.allow()" value="Sleep">
       </tr>
     </table>
     
