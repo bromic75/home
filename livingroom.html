@@ -3,28 +3,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="sleep.js"></script>
+    <script src="sleep.js"></script>
+    <script>
+
+            function updateDate() {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById("date").innerHTML = now.toLocaleDateString(undefined, options);
+        }
+
+        setInterval(updateDate, 1000); // Refresh every second</script>
 </head>
   
-<body style="background-color:rgb(33, 33, 33);text-align:center;">
-  
+<body style="background-color: rgb(33, 33, 33); text-align: center; ">
+
+    <p id="date" style="color: white; font-size: 60px;"></p>
+
     <table style="width:100%;height:450px">
-      <tr>
-        <td style="width:20%">
-          <embed src="https://flipclock.us/#/"  style="width: 100%; height: 100%">
-        </td>
-        <td>
-          <iframe src="https://www.meteoblue.com/en/weather/widget/three/laval_canada_6050610?geoloc=fixed&nocurrent=0&noforecast=0&days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=dark"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 575px; height: 606px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/laval_canada_6050610?utm_source=three_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
-        </td>
-      </tr>
-      <tr>
-          <td>
-              <input type="button" onclick="sleep.prevent()" value="Awake">
-              <input type="button" onclick="sleep.allow()" value="Sleep">
-          </td>
-      </tr>
+        <tr>
+            <td style="width: 20%;">
+                <embed src="https://flipclock.us/#/" style="width: 100%; height: 100%">
+            </td>
+            <td>
+                <iframe src="https://www.meteoblue.com/en/weather/widget/three/laval_canada_6050610?geoloc=fixed&nocurrent=0&noforecast=0&days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=dark" frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 575px; height: 606px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/laval_canada_6050610?utm_source=three_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" onclick="sleep.prevent()" value="Awake">
+                <input type="button" onclick="sleep.allow()" value="Sleep">
+            </td>
+        </tr>
     </table>
-    
+
 </body>
 </html>
 
