@@ -17,32 +17,22 @@
 </head>
   
 <body style="background-color: rgb(33, 33, 33); text-align: center; ">
-      
 
-    <table style="width:100%;height:800px">
-        <tr style="height:15%">
-            <td>
-                <div id="date" style="color: white; font-size: 60px;"></div>
-            </td>
-        </tr>
-        <tr>
-            <td style="height:250px">
-                <embed src="https://flipclock.us/#/" style="width:100%;height:100%">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="ww_cd6fe7565556f" v='1.3' loc='id' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl4737"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#000000","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#FFFFFF17","sl_tof":"3"}'>More forecasts: <a href="https://oneweather.org/calgary/30_days/" id="ww_cd6fe7565556f_u" target="_blank">Weather Calgary 30 days</a></div>
-                <script async src="https://app3.weatherwidget.org/js/?id=ww_cd6fe7565556f"></script>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="button" onclick="sleep.prevent()" value="Awake">
-                <input type="button" onclick="sleep.allow()" value="Sleep">
-            </td>
-        </tr>
-    </table>
+    <header>
+        <div id="date" style="color: white; font-size: 60px;"></div>
+    </header>
+
+    <aside>
+        <embed src="https://flipclock.us/#/" style="width:100%;height:100%">
+    </aside>
+
+    <footer>
+        <div id="ww_cd6fe7565556f" v='1.3' loc='id' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl4737"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#000000","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#FFFFFF17","sl_tof":"3"}'>More forecasts: <a href="https://oneweather.org/calgary/30_days/" id="ww_cd6fe7565556f_u" target="_blank">Weather Calgary 30 days</a></div>
+        <script async src="https://app3.weatherwidget.org/js/?id=ww_cd6fe7565556f"></script>
+    </footer>
+
+    <input type="button" onclick="sleep.prevent()" value="Awake">
+    <input type="button" onclick="sleep.allow()" value="Sleep">
 
 </body>
 </html>
