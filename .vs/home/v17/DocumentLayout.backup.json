@@ -14,8 +14,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +32,7 @@
               "RelativeDocumentMoniker": "livingroom.html",
               "ToolTip": "C:\\Users\\bro_m\\source\\repos\\home\\livingroom.html",
               "RelativeToolTip": "livingroom.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-06-03T16:11:55.335Z",
               "EditorCaption": ""
